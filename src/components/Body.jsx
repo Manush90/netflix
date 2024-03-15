@@ -1,13 +1,14 @@
 import Marvel from "./Marvel";
 import HarryPotter from "./HarryPotter";
 import Disney from "./Disney";
+import { BsFillGrid3X3GapFill, BsGrid } from "react-icons/bs";
 
 const Body = function () {
   return (
     <div className="container-fluid px-4 bg-dark text-white">
       <div className="d-flex justify-content-between">
         <div className="d-flex">
-          <h2 className="mb-4">TV Shows</h2>
+          <h2 className="mb-4">Consigliati per te</h2>
           <div className="btn-group" role="group">
             <div className="dropdown ms-4 mt-1">
               <button
@@ -16,7 +17,7 @@ const Body = function () {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Genres
+                Genere
               </button>
               <ul className="dropdown-menu">
                 <li>
@@ -39,17 +40,17 @@ const Body = function () {
           </div>
         </div>
         <div>
-          <i className="bi bi-grid icons"></i>
-          <i className="bi bi-grid-3x3 icons"></i>
+          <BsGrid className="icons"></BsGrid>
+          <BsFillGrid3X3GapFill className="icons"></BsFillGrid3X3GapFill>
         </div>
       </div>
-      <h4>Scorsese's Selection</h4>
+      <h4>Disney Selection</h4>
       <div className="row mb-4 row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4">
         <div className=" w-100  text-center px-1 ">
           <Disney />
         </div>
       </div>
-      <h4>Marvel Heroes</h4>
+      <h4>Marvel's Heroes</h4>
       <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4">
         <div className="w-100 col mb-2 text-center px-1">
           <Marvel />

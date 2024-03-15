@@ -1,3 +1,5 @@
+import { BsBell, BsPerson, BsSearch } from "react-icons/bs";
+
 const NavBar = function () {
   return (
     <nav className="navbar navbar-expand-lg p-0 bg-dark" data-bs-theme="dark">
@@ -34,27 +36,27 @@ const NavBar = function () {
             </li>
             <li className="nav-item">
               <a className="nav-link fw-bold" href="#link">
-                Movies
+                Film
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link fw-bold" href="#link">
-                Recently Added
+                Aggiunti di recente
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link fw-bold" href="#link">
-                My List
+                Preferiti
               </a>
             </li>
           </ul>
           <div className="d-flex align-items-center">
-            <i className="bi bi-search white icons"></i>
+            <BsSearch className="icons"></BsSearch>
             <div id="kids" className="fw-bold">
               KIDS
             </div>
-            <i className="bi bi-bell icons white"></i>
-            <i className="bi bi-person-circle icons white"></i>
+            <BsBell className="icons"></BsBell>
+            <BsPerson className="icons"></BsPerson>
           </div>
         </div>
       </div>

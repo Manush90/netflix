@@ -13,7 +13,7 @@ const Disney = () => {
   }, []);
 
   return (
-    <div className=" w-100 row row-cols-12 row-cols-xs-6 row-cols-md-8 row-cols-lg-12">
+    <div className="row row-cols-2 row-cols-sm-3 row-cols-md-6 row-cols-lg-6 row-cols-xl-6">
       {movies.slice(0, 6).map((movie, index) => (
         <div key={index} className="col mb-2">
           <div className="card border-0">

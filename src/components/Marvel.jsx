@@ -13,14 +13,12 @@ const Marvel = () => {
   }, []);
 
   return (
-    <div className="d-flex w-100">
+    <div className="row row-cols-2 row-cols-sm-3 row-cols-md-6 row-cols-lg-6 row-cols-xl-6">
       {movies.slice(0, 6).map((movie, index) => (
-        <div
-          key={index}
-          className="card mx-1 border-0"
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-        >
-          <img className="card-img-top" src={movie.Poster} alt={movie.Title} />
+        <div key={index} className="col mb-2">
+          <div className="card border-0">
+            <img className="card-img-top" src={movie.Poster} alt={movie.Title} />
+          </div>
         </div>
       ))}
     </div>
