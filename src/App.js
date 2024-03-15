@@ -1,14 +1,13 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavBar from "./components/NavBar.jsx";
+import MyNavBar from "./components/MyNavBar.jsx";
 import Body from "./components/Body.jsx";
 import Footer from "./components/Footer.jsx";
-import { BsSerch, BsPerson, BsBell } from "react-icons/bs";
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <MyNavBar />
       <Body />
       <Footer />
     </div>
