@@ -1,4 +1,5 @@
 import { BsBell, BsPerson, BsSearch } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const NavBar = function () {
   return (
@@ -25,9 +26,9 @@ const NavBar = function () {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active fw-bold" href="# link">
+              <Link className="nav-link  fw-bold" to="/src/components/Body.jsx">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link fw-bold" href="#link">
@@ -35,9 +36,9 @@ const NavBar = function () {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link fw-bold" href="#link">
+              <Link className="nav-link  fw-bold" to="/src/components/Marvel.jsx">
                 Film
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link fw-bold" href="#link">
